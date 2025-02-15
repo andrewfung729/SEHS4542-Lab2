@@ -13,4 +13,26 @@
     <string name="ex1">练习 1</string>
     <string name="ex2">练习 2</string>
     <string name="ex3">练习 3</string>
+    
+    <!-- Calculator -->
+    <string name="error_divide_by_zero">不能除以零！</string>
+    <string name="error_invalid_number">请输入有效数字</string>
+    <string name="result">计算结果：</string>
+    <string name="first_number">第一个数字：</string>
+    <string name="second_number">第二个数字：</string>
+    <string name="add">+</string>
+    <string name="subtract">-</string>
+    <string name="multiply">×</string>
+    <string name="divide">÷</string>
+    <string name="reset">C</string>
+    
+    <!-- Text Movement -->
+    <string name="north">北</string>
+    <string name="south">南</string>
+    <string name="east">东</string>
+    <string name="west">西</string>
+    <string name="west_to_north">西到北</string>
+    <string name="north_to_east">北到东</string>
+    <string name="east_to_south">东到南</string>
+    <string name="south_to_west">南到西</string>
 </resources>

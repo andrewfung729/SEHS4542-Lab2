@@ -14,6 +14,10 @@ public class TextMovementActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        
+        // Apply saved language settings before setting content view
+        LanguageSettingsActivity.applyLanguageFromPreferences(this);
+        
         setContentView(R.layout.activity_text_movement);
 
         // Initialize EditTexts
@@ -47,5 +51,12 @@ public class TextMovementActivity extends AppCompatActivity {
             to.setText(fromText);
             from.setText("");
         }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // Reapply language settings when returning to activity
+        LanguageSettingsActivity.applyLanguageFromPreferences(this);
     }
 }

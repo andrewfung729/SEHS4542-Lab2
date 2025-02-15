@@ -13,7 +13,7 @@
         android:layout_marginStart="29dp"
         android:layout_marginTop="43dp"
         android:background="@android:color/holo_purple"
-        android:text="Back"
+        android:text="@string/back"
         android:textColor="@android:color/white" />
 
     <TextView
@@ -24,7 +24,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="201dp"
         android:layout_marginTop="210dp"
-        android:text="North" />
+        android:text="@string/north" />
 
     <TextView
         android:id="@+id/labelNorth2"
@@ -34,7 +34,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="188dp"
         android:layout_marginTop="48dp"
-        android:text="Ex 1"
+        android:text="@string/ex1"
         android:textSize="24sp" />
 
     <EditText
@@ -56,7 +56,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="76dp"
         android:layout_marginTop="354dp"
-        android:text="West" />
+        android:text="@string/west" />
 
     <EditText
         android:id="@+id/editTextWest"
@@ -77,7 +77,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="313dp"
         android:layout_marginTop="372dp"
-        android:text="East" />
+        android:text="@string/east" />
 
     <EditText
         android:id="@+id/editTextEast"
@@ -98,7 +98,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="177dp"
         android:layout_marginTop="580dp"
-        android:text="South" />
+        android:text="@string/south" />
 
     <EditText
         android:id="@+id/editTextSouth"
@@ -120,7 +120,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="294dp"
         android:background="@android:color/holo_purple"
-        android:text="West to North"
+        android:text="@string/west_to_north"
         android:textColor="@android:color/white" />
 
     <Button
@@ -132,7 +132,7 @@
         android:layout_marginStart="242dp"
         android:layout_marginTop="302dp"
         android:background="@android:color/holo_purple"
-        android:text="North to East"
+        android:text="@string/north_to_east"
         android:textColor="@android:color/white" />
 
     <Button
@@ -144,7 +144,7 @@
         android:layout_marginStart="225dp"
         android:layout_marginTop="492dp"
         android:background="@android:color/holo_purple"
-        android:text="East to South"
+        android:text="@string/east_to_south"
         android:textColor="@android:color/white" />
 
     <Button
@@ -156,7 +156,7 @@
         android:layout_marginStart="37dp"
         android:layout_marginTop="479dp"
         android:background="@android:color/holo_purple"
-        android:text="South to West"
+        android:text="@string/south_to_west"
         android:textColor="@android:color/white" />
 
 </RelativeLayout>

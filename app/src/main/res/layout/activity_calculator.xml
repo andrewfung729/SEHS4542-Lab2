@@ -12,7 +12,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="150dp"
         android:layout_marginTop="50dp"
-        android:text="Ex 2"
+        android:text="@string/ex2"
         android:textSize="24sp" />
 
     <Button
@@ -24,7 +24,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:background="@android:color/holo_purple"
-        android:text="Back"
+        android:text="@string/back"
         android:textColor="@android:color/white" />
 
     <!-- First Number Input -->
@@ -36,7 +36,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="30dp"
         android:layout_marginTop="150dp"
-        android:text="First number:" />
+        android:text="@string/first_number"
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/editTextFirstNumber"
@@ -44,10 +45,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="150dp"
+        android:layout_marginStart="170dp"
         android:layout_marginTop="140dp"
-        android:inputType="numberDecimal"
         android:background="@android:color/white"
+        android:hint="@string/first_number"
+        android:inputType="numberDecimal"
         android:padding="8dp" />
 
     <!-- Second Number Input -->
@@ -59,7 +61,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="30dp"
         android:layout_marginTop="200dp"
-        android:text="Second number:" />
+        android:text="@string/second_number"
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/editTextSecondNumber"
@@ -67,10 +70,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="150dp"
+        android:layout_marginStart="170dp"
         android:layout_marginTop="190dp"
-        android:inputType="numberDecimal"
         android:background="@android:color/white"
+        android:hint="@string/second_number"
+        android:inputType="numberDecimal"
         android:padding="8dp" />
 
     <!-- Operation Buttons -->
@@ -90,7 +94,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"
             android:background="@android:color/holo_purple"
-            android:text="+"
+            android:text="@string/add"
             android:textColor="@android:color/white" />
 
         <Button
@@ -99,7 +103,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"
             android:background="@android:color/holo_purple"
-            android:text="-"
+            android:text="@string/subtract"
             android:textColor="@android:color/white" />
 
         <Button
@@ -108,7 +112,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"
             android:background="@android:color/holo_purple"
-            android:text="×"
+            android:text="@string/multiply"
             android:textColor="@android:color/white" />
 
         <Button
@@ -117,7 +121,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"
             android:background="@android:color/holo_purple"
-            android:text="÷"
+            android:text="@string/divide"
             android:textColor="@android:color/white" />
 
         <Button
@@ -125,7 +129,7 @@
             android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:background="@android:color/holo_purple"
-            android:text="C"
+            android:text="@string/reset"
             android:textColor="@android:color/white" />
     </LinearLayout>
 
@@ -137,8 +141,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="320dp"
-        android:text="Calc result:" />
+        android:layout_marginTop="330dp"
+        android:text="@string/result"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textViewResult"
@@ -146,9 +151,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="150dp"
+        android:layout_marginStart="170dp"
         android:layout_marginTop="320dp"
         android:background="@android:color/white"
-        android:padding="8dp" />
+        android:padding="8dp"
+        android:textSize="24sp" />
 
 </RelativeLayout>

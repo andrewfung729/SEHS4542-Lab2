@@ -15,6 +15,10 @@ public class CalculatorActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        
+        // Apply saved language settings before setting content view
+        LanguageSettingsActivity.applyLanguageFromPreferences(this);
+        
         setContentView(R.layout.activity_calculator);
 
         // Initialize views
@@ -56,7 +60,7 @@ public class CalculatorActivity extends AppCompatActivity {
                     break;
                 case '÷':
                     if (num2 == 0) {
-                        Toast.makeText(this, "Cannot divide by zero!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, getString(R.string.error_divide_by_zero), Toast.LENGTH_SHORT).show();
                         return;
                     }
                     result = num1 / num2;
@@ -69,7 +73,7 @@ public class CalculatorActivity extends AppCompatActivity {
             resultView.setText(formattedResult);
 
         } catch (NumberFormatException e) {
-            Toast.makeText(this, "Please enter valid numbers", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.error_invalid_number), Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -77,5 +81,12 @@ public class CalculatorActivity extends AppCompatActivity {
         firstNumberInput.setText("");
         secondNumberInput.setText("");
         resultView.setText("");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // Reapply language settings when returning to activity
+        LanguageSettingsActivity.applyLanguageFromPreferences(this);
     }
 }

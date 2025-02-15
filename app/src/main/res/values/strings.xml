@@ -12,4 +12,26 @@
     <string name="ex1">Ex 1</string>
     <string name="ex2">Ex 2</string>
     <string name="ex3">Ex 3</string>
+    
+    <!-- Calculator -->
+    <string name="error_divide_by_zero">Cannot divide by zero!</string>
+    <string name="error_invalid_number">Please enter valid numbers</string>
+    <string name="result">Result:</string>
+    <string name="first_number">First number:</string>
+    <string name="second_number">Second number:</string>
+    <string name="add">+</string>
+    <string name="subtract">-</string>
+    <string name="multiply">×</string>
+    <string name="divide">÷</string>
+    <string name="reset">C</string>
+    
+    <!-- Text Movement -->
+    <string name="north">North</string>
+    <string name="south">South</string>
+    <string name="east">East</string>
+    <string name="west">West</string>
+    <string name="west_to_north">West to North</string>
+    <string name="north_to_east">North to East</string>
+    <string name="east_to_south">East to South</string>
+    <string name="south_to_west">South to West</string>
 </resources>
