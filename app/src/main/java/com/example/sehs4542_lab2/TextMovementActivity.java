@@ -1,5 +1,6 @@
 package com.example.sehs4542_lab2;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -8,15 +9,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class TextMovementActivity extends AppCompatActivity {
     private EditText northText, southText, eastText, westText;
-    private Button btnWestToNorth, btnNorthToEast, btnEastToSouth, btnSouthToWest;
-    private Button btnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        
-        // Apply saved language settings before setting content view
-        LanguageSettingsActivity.applyLanguageFromPreferences(this);
         
         setContentView(R.layout.activity_text_movement);
 
@@ -27,11 +23,11 @@ public class TextMovementActivity extends AppCompatActivity {
         westText = findViewById(R.id.editTextWest);
 
         // Initialize Buttons
-        btnWestToNorth = findViewById(R.id.btnWestToNorth);
-        btnNorthToEast = findViewById(R.id.btnNorthToEast);
-        btnEastToSouth = findViewById(R.id.btnEastToSouth);
-        btnSouthToWest = findViewById(R.id.btnSouthToWest);
-        btnBack = findViewById(R.id.btnBack);
+        Button btnWestToNorth = findViewById(R.id.btnWestToNorth);
+        Button btnNorthToEast = findViewById(R.id.btnNorthToEast);
+        Button btnEastToSouth = findViewById(R.id.btnEastToSouth);
+        Button btnSouthToWest = findViewById(R.id.btnSouthToWest);
+        Button btnBack = findViewById(R.id.btnBack);
 
         // Set up button click listeners
         btnWestToNorth.setOnClickListener(v -> moveText(westText, northText));
@@ -51,12 +47,5 @@ public class TextMovementActivity extends AppCompatActivity {
             to.setText(fromText);
             from.setText("");
         }
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        // Reapply language settings when returning to activity
-        LanguageSettingsActivity.applyLanguageFromPreferences(this);
     }
 }

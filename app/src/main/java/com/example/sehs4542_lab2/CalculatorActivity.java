@@ -1,5 +1,7 @@
 package com.example.sehs4542_lab2;
 
+import android.content.Context;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -7,31 +9,29 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Locale;
+
 public class CalculatorActivity extends AppCompatActivity {
     private EditText firstNumberInput, secondNumberInput;
     private TextView resultView;
-    private Button btnAdd, btnSubtract, btnMultiply, btnDivide, btnReset, btnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        
-        // Apply saved language settings before setting content view
-        LanguageSettingsActivity.applyLanguageFromPreferences(this);
-        
+
         setContentView(R.layout.activity_calculator);
 
         // Initialize views
         firstNumberInput = findViewById(R.id.editTextFirstNumber);
         secondNumberInput = findViewById(R.id.editTextSecondNumber);
         resultView = findViewById(R.id.textViewResult);
-        
-        btnAdd = findViewById(R.id.btnAdd);
-        btnSubtract = findViewById(R.id.btnSubtract);
-        btnMultiply = findViewById(R.id.btnMultiply);
-        btnDivide = findViewById(R.id.btnDivide);
-        btnReset = findViewById(R.id.btnReset);
-        btnBack = findViewById(R.id.btnBack);
+
+        Button btnAdd = findViewById(R.id.btnAdd);
+        Button btnSubtract = findViewById(R.id.btnSubtract);
+        Button btnMultiply = findViewById(R.id.btnMultiply);
+        Button btnDivide = findViewById(R.id.btnDivide);
+        Button btnReset = findViewById(R.id.btnReset);
+        Button btnBack = findViewById(R.id.btnBack);
 
         // Set click listeners
         btnAdd.setOnClickListener(v -> calculate('+'));
@@ -68,8 +68,8 @@ public class CalculatorActivity extends AppCompatActivity {
             }
 
             // Format result to remove unnecessary decimal places
-            String formattedResult = result % 1 == 0 ? 
-                String.format("%.0f", result) : String.format("%.2f", result);
+            String formattedResult = result % 1 == 0 ?
+                String.format(Locale.getDefault(),"%.0f", result) : String.format(Locale.getDefault(),"%.2f", result);
             resultView.setText(formattedResult);
 
         } catch (NumberFormatException e) {
@@ -81,12 +81,5 @@ public class CalculatorActivity extends AppCompatActivity {
         firstNumberInput.setText("");
         secondNumberInput.setText("");
         resultView.setText("");
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        // Reapply language settings when returning to activity
-        LanguageSettingsActivity.applyLanguageFromPreferences(this);
     }
 }
