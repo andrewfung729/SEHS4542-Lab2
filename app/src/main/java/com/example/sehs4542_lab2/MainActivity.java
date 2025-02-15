@@ -24,8 +24,15 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Button btnOpenTextMovement = findViewById(R.id.btnOpenTextMovement);
+        Button btnOpenCalculator = findViewById(R.id.btnOpenCalculator);
+
         btnOpenTextMovement.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, TextMovementActivity.class);
+            startActivity(intent);
+        });
+
+        btnOpenCalculator.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, CalculatorActivity.class);
             startActivity(intent);
         });
     }

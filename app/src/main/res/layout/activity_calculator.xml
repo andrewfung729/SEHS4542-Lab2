@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/labelTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="50dp"
+        android:text="Ex 2"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_purple"
+        android:text="Back"
+        android:textColor="@android:color/white" />
+
+    <!-- First Number Input -->
+    <TextView
+        android:id="@+id/labelFirstNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="150dp"
+        android:text="First number:" />
+
+    <EditText
+        android:id="@+id/editTextFirstNumber"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="140dp"
+        android:inputType="numberDecimal"
+        android:background="@android:color/white"
+        android:padding="8dp" />
+
+    <!-- Second Number Input -->
+    <TextView
+        android:id="@+id/labelSecondNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="200dp"
+        android:text="Second number:" />
+
+    <EditText
+        android:id="@+id/editTextSecondNumber"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="190dp"
+        android:inputType="numberDecimal"
+        android:background="@android:color/white"
+        android:padding="8dp" />
+
+    <!-- Operation Buttons -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="250dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/holo_purple"
+            android:text="+"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnSubtract"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/holo_purple"
+            android:text="-"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnMultiply"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/holo_purple"
+            android:text="×"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnDivide"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/holo_purple"
+            android:text="÷"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_purple"
+            android:text="C"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <!-- Result -->
+    <TextView
+        android:id="@+id/labelResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="320dp"
+        android:text="Calc result:" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="320dp"
+        android:background="@android:color/white"
+        android:padding="8dp" />
+
+</RelativeLayout>
