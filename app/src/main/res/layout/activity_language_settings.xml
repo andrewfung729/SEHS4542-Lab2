@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#E3F2FD">
+
+    <TextView
+        android:id="@+id/labelTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="50dp"
+        android:text="Ex 3"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_purple"
+        android:text="Back"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/language_settings"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/languageRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <RadioButton
+            android:id="@+id/radioTraditionalChinese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/traditional_chinese"
+            android:textSize="18sp"
+            android:buttonTint="@android:color/holo_green_light" />
+
+        <RadioButton
+            android:id="@+id/radioSimplifiedChinese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/simplified_chinese"
+            android:textSize="18sp"
+            android:buttonTint="@android:color/holo_green_light" />
+
+        <RadioButton
+            android:id="@+id/radioEnglish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/english"
+            android:textSize="18sp"
+            android:buttonTint="@android:color/holo_green_light" />
+    </RadioGroup>
+
+</RelativeLayout>

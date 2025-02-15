@@ -11,7 +11,7 @@
         android:id="@+id/btnOpenTextMovement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ex 1"
+        android:text="@string/ex1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.439"
@@ -23,12 +23,24 @@
         android:id="@+id/btnOpenCalculator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ex 2"
+        android:text="@string/ex2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.439"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.4" />
+
+    <Button
+        android:id="@+id/btnOpenLanguageSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ex3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.541" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

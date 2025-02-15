@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SEHS4542_Lab2</string>
+    
+    <!-- Language Settings -->
+    <string name="language_settings">語言設定</string>
+    <string name="traditional_chinese">繁體中文</string>
+    <string name="simplified_chinese">簡體中文</string>
+    <string name="english">英文</string>
+    
+    <!-- Common UI Elements -->
+    <string name="back">返回</string>
+    <string name="ex1">練習 1</string>
+    <string name="ex2">練習 2</string>
+    <string name="ex3">練習 3</string>
+</resources>

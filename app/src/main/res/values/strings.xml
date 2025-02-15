@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">SEHS4542_Lab2</string>
+    
+    <!-- Language Settings -->
+    <string name="language_settings">Language Settings</string>
+    <string name="traditional_chinese">Traditional Chinese</string>
+    <string name="simplified_chinese">Simplified Chinese</string>
+    <string name="english">English</string>
+    
+    <!-- Common UI Elements -->
+    <string name="back">Back</string>
+    <string name="ex1">Ex 1</string>
+    <string name="ex2">Ex 2</string>
+    <string name="ex3">Ex 3</string>
 </resources>

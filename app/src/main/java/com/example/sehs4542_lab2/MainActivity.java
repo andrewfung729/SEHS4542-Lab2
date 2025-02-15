@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnOpenTextMovement = findViewById(R.id.btnOpenTextMovement);
         Button btnOpenCalculator = findViewById(R.id.btnOpenCalculator);
+        Button btnOpenLanguageSettings = findViewById(R.id.btnOpenLanguageSettings);
 
         btnOpenTextMovement.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, TextMovementActivity.class);
@@ -33,6 +34,11 @@ public class MainActivity extends AppCompatActivity {
 
         btnOpenCalculator.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, CalculatorActivity.class);
+            startActivity(intent);
+        });
+
+        btnOpenLanguageSettings.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, LanguageSettingsActivity.class);
             startActivity(intent);
         });
     }
